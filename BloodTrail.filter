@@ -1,0 +1,284 @@
+#====================================================================================================================================================
+#	FILE:	BloodTrail.filter
+#	AUTHOR: Viga Rudr
+#
+#	:bloodtrail: Лига :bloodtrail: очень :bloodtrail: хороша :bloodtrail:
+#	
+#	HISTORY:
+#	| Author    | Date time  | Description 		                        |
+#	| Viga Rudr | 08.12.2024 | First Redaction                          |
+#	| Viga Rudr | 14.12.2024 | Base Types + Jewellers + File Formatting |
+#   
+#====================================================================================================================================================
+
+
+#====================================================================================================================================================
+# CURRENCY
+#====================================================================================================================================================
+Show
+	Class Currency 	
+	BaseType "Orb of Transmutation" "Orb of Augmentation" "Regal Shard" "Armourer's Scrap" "Blacksmith's Whetstone"
+	SetFontSize 30
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 210 178 135 255
+	MinimapIcon 0 White Circle
+DisableDropSound True
+#CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
+
+Show
+	Class Currency 
+	BaseType "Orb of Transmutation" "Orb of Augmentation" "Regal Shard" "Artificer's Shard"
+	SetFontSize 30
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 210 178 135 255
+	MinimapIcon 0 White Circle
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
+	
+Show
+	Class Currency
+	BaseType "Chaos Orb" "Regal Orb" "Artificer's Orb"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Circle
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1Ah.mp3" 300
+
+Show
+	Class Currency
+	BaseType "Orb of Annulment" "Orb of Alchemy" "Vaal Orb" "Lesser Jeweller's Orb" "Gemcutter's Prism" "Glassblower's Bauble"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Star
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1Good.mp3" 300
+
+Show
+	Class Currency
+	BaseType "Gemcutter's Prism" "Glassblower's Bauble"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Star
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\3Oh amazing.mp3" 300
+
+Show
+	Class Currency
+	BaseType "Greater Jeweller's Orb"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\3Ahh_fascinating.mp3" 300
+
+Show
+	Class Currency
+	BaseType "Perfect Jeweller's Orb"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\5Ahh_worth_await.mp3" 300
+
+Show
+	Class Currency
+	BaseType "Exalted Orb"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Circle
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\3Exalted.mp3" 300
+
+Show
+	Class Currency
+	BaseType "Divine Orb" "Orb of Annulment" 
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\4Divine.mp3" 300
+
+Show
+	Class Currency
+	BaseType "Mirror of Kalandra"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayEffect Red
+	MinimapIcon 0 Red Cross
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\5You did well.mp3" 300
+
+#====================================================================================================================================================
+# USABLE ITEMS
+#====================================================================================================================================================
+Show
+	BaseType "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
+	SetFontSize 37
+	SetTextColor 30 190 190 255
+	SetBorderColor 74 230 58 255
+	PlayEffect Grey
+	MinimapIcon 1 Green Triangle
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1Good.mp3" 300
+
+Show
+	BaseType "Djinn Barya" "Inscribed Ultimatum"
+	SetFontSize 37
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 175 120 230 240
+	PlayEffect White
+	MinimapIcon 0 Purple Moon
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\2Uu_brutal.mp3" 300
+
+#====================================================================================================================================================
+# ESSENCES
+#====================================================================================================================================================
+Show
+	BaseType "Essence of "
+	SetFontSize 36
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 254 255 128 255
+	PlayEffect White
+	MinimapIcon 2 White Circle
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\2Essence.mp3" 300
+
+#====================================================================================================================================================
+# WAYSTONES
+#====================================================================================================================================================
+Show
+	BaseType "Waystone"
+	WaystoneTier < 10
+	SetFontSize 36
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 175 120 230 240
+	PlayEffect White
+	MinimapIcon 0 Purple Moon
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\map low t.mp3"
+
+Show
+	BaseType "Waystone"
+	WaystoneTier >= 10
+	SetFontSize 36
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 175 120 230 240
+	PlayEffect White
+	MinimapIcon 0 Purple Moon
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\map high t.mp3"
+
+#====================================================================================================================================================
+# GEAR
+#====================================================================================================================================================
+#Show
+#	Class == "Two Hand Maces"
+#	SetFontSize 37
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 50 200 50 255
+#	SetBackgroundColor 50 130 165
+#	PlayEffect Blue Temp
+#DisableDropSound True
+#CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
+
+Show
+	Sockets > 0
+	Rarity Normal Magic Rare
+	SetFontSize 35
+	#SetTextColor 255 255 255 255
+	SetBorderColor 100 100 100 150
+	SetBackgroundColor 20 20 0 255
+	PlayEffect Grey
+	MinimapIcon 2 Grey Hexagon
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
+
+Show
+	BaseType "Dualstring Bow"
+	Rarity Normal Magic Rare
+	SetFontSize 36
+	SetTextColor 255 255 0 255
+	SetBorderColor 255 255 0 255
+	SetBackgroundColor 20 20 20 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Star
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
+
+Show #Item Base Ilvl 82+
+	BaseType "Dualstring Bow" "Long Quarterstaff" "Bombard Crossbow" "Leaden Greathammer" "Chiming Staff" "Gelid Staff" "Galvanic Wand" "Attuned Wand" "Siphoning Wand"
+	Rarity Normal Magic Rare
+	ItemLevel >= 82
+	SetFontSize 36
+	SetTextColor 255 255 0 255
+	SetBorderColor 255 255 0 255
+	SetBackgroundColor 20 20 20 255
+	PlayEffect Cyan
+	MinimapIcon 0 Cyan Moon
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
+
+
+#====================================================================================================================================================
+# MISC
+#====================================================================================================================================================
+Show
+	BaseType "Relic"
+	SetFontSize 34
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect Green
+	MinimapIcon 0 Green Raindrop
+
+Show
+	BaseType "Rune"
+	SetFontSize 30
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 111 255 111
+	
+Show
+	BaseType "Gold"
+	StackSize >= 50
+	SetTextColor 0 0 0
+	SetFontSize 30
+	SetBorderColor 255 255 255
+	SetBackgroundColor 255 215 0
+	
+Hide
+	BaseType "Gold"
+	SetTextColor 0 0 0
+	SetFontSize 30
+	SetBorderColor 255 255 255
+	SetBackgroundColor 255 215 0
