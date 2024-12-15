@@ -248,6 +248,62 @@ Show #Item Base Ilvl 82+
 DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
 
+#====================================================================================================================================================
+# DISTILLED
+#====================================================================================================================================================
+
+Show #OILS TIER 1
+	BaseType "Distilled Ire" "Distilled Guilt" "Distilled Greed" "Distilled Paranoia"
+	SetFontSize 34
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Raindrop
+	
+Show #OILS TIER 2
+	BaseType "Distilled Envy" 
+	SetFontSize 34
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Raindrop
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
+	
+Show #OILS TIER 3
+	BaseType "Distilled Disgust" "Distilled Despair"
+	SetFontSize 34
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Raindrop
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\2.mp3" 300
+	
+Show #OILS TIER 4
+	BaseType "Distilled Fear" "Distilled Suffering" "Distilled Suffering"
+	SetFontSize 34
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Raindrop
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\4.mp3" 300
+
+Show #OILS TIER 5
+	BaseType "Distilled Isolation"
+	SetFontSize 34
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Raindrop
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\5.mp3" 300
 
 #====================================================================================================================================================
 # MISC
