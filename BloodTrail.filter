@@ -263,7 +263,7 @@ Show #Boots Base
 	SetFontSize 30
 	
 Show #Body Armour Base
-	BaseType "Golden Mantle" "Iron Cuirass" "Steel Plate" "Vaal Cuirass" "Pathfinder Coat" "Studded Vest" "Hexer's Robe" "Keth Raiment" "Altar Robe" "Rogue Armour" "Scale Mail" "Cloaked Mail" "Shaman Mantle" "Sacrificial Mantle" "Scalper's Jacket" "Wayfarer Jacket"
+	BaseType "Golden Mantle" "Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Pathfinder Coat" "Studded Vest" "Hexer's Robe" "Expert Keth Raiment" "Expert Altar Robe" "Expert Rogue Armour" "Scale Mail" "Cloaked Mail" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Scalper's Jacket" "Expert Wayfarer Jacket"
 	Rarity Normal Magic Rare
 	SetFontSize 30
 	
