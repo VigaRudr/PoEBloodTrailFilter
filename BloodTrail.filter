@@ -296,6 +296,11 @@ Show
 	SetBackgroundColor 0 0 0 255
 DisableDropSound True
 
+Show #Hide all crap
+	Class == "One Hand Maces" "Two Hand Maces" "Sceptres" "Bows" "Quarterstaves" "Crossbows" "Quivers" "Shields" "Foci" "Gloves" "Body Armours" "Boots" "Helmets"
+	Quality > 0
+	SetBorderColor 0 0 60 255
+
 Hide #Hide all crap
 	Class == "One Hand Maces" "Two Hand Maces" "Sceptres" "Bows" "Quarterstaves" "Crossbows" "Quivers" "Shields" "Foci" "Gloves" "Body Armours" "Boots" "Helmets"
 	Rarity < "Rare"
@@ -421,15 +426,11 @@ Show
 	
 Show
 	BaseType "Gold"
-	StackSize >= 50
+	StackSize >= 300
 	SetTextColor 0 0 0
 	SetFontSize 30
 	SetBorderColor 255 255 255
 	SetBackgroundColor 255 215 0
 	
 Hide
-	BaseType "Gold"
-	SetTextColor 0 0 0
-	SetFontSize 30
-	SetBorderColor 255 255 255
-	SetBackgroundColor 255 215 0
+	BaseType "Gold" "Wisdom"
