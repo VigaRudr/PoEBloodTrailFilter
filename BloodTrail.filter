@@ -5,7 +5,7 @@
 #	:bloodtrail: Лига :bloodtrail: очень :bloodtrail: хороша :bloodtrail:
 #	
 #	HISTORY:
-#	| Author    | Date time  | Description 		                    |
+#	| Author    | Date time  | Description 		                        |
 #	| Viga Rudr | 08.12.2024 | First Redaction                          |
 #	| Viga Rudr | 14.12.2024 | Base Types + Jewellers + File Formatting |
 #   
@@ -158,21 +158,7 @@ DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\2Uu_brutal.mp3" 300
 
 #====================================================================================================================================================
-# ESSENCES
-#====================================================================================================================================================
-Show
-	BaseType "Essence of "
-	SetFontSize 36
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 254 255 128 255
-	PlayEffect White
-	MinimapIcon 2 White Circle
-DisableDropSound True
-CustomAlertSound "BloodTrailFilterSound\2Essence.mp3" 300
-
-#====================================================================================================================================================
-# WAYSTONES
+# WAYSTONES & TABLETS
 #====================================================================================================================================================
 Show
 	BaseType "Waystone"
@@ -198,21 +184,19 @@ Show
 DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\map high t.mp3"
 
+Show
+	BaseType "Precursor "
+	SetFontSize 34
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect Green
+	MinimapIcon 0 Green Raindrop
 #====================================================================================================================================================
 # GEAR
 #====================================================================================================================================================
-#Show
-#	Class == "Two Hand Maces"
-#	SetFontSize 37
-#	SetTextColor 255 255 255 255
-#	SetBorderColor 50 200 50 255
-#	SetBackgroundColor 50 130 165
-#	PlayEffect Blue Temp
-#DisableDropSound True
-#CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
-
 Show
-	Sockets > 0
+	Sockets > 1
 	Rarity Normal Magic Rare
 	SetFontSize 35
 	#SetTextColor 255 255 255 255
@@ -223,31 +207,98 @@ Show
 DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
 
+Show #Bows Base
+	BaseType "Dualstring Bow" #"Zealot Bow"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+
+Show #Quarterstaff Base
+	BaseType "Long Quarterstaff" "Slicing Quarterstaff" 
+	Rarity Normal Magic Rare
+	SetFontSize 30
+
+Show #Crossbow Base
+	BaseType "Bombard Crossbow" "Dyad Crossbow" "Forlorn Crossbow"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+	
+Show #Two-Hand Maces Base
+	BaseType "Leaden Greathammer" "Oak Greathammer" "Temple Maul" "Crumbling Maul"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+
+Show #Staves Base
+	BaseType "Chiming Staff" "Gelid Staff" "Roaring Staff" "Paralysing Staff" "Cleric Staff" "Dark Staff" "Reaping Staff" "Rending Staff" "Voltaic Staff"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+
+Show #Wand Base
+	BaseType "Galvanic Wand" "Attuned Wand" "Siphoning Wand"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+
+Show #Sceptres Base
+	BaseType "Hallowed Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Devouring Sceptre" "Clasped Sceptre" "Wrath Sceptre" "Devotional Sceptre" "Omen Sceptre" "Stoic Sceptre"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+
+Show #Quivers Base
+	BaseType "Visceral Quiver" "Primed Quiver" "Two-Point Quiver" "Fire Quiver" "Penetrating Quiver"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+	
+Show #Shields Base
+	BaseType "Tower Shield" "Feathered Targe" "Crest Shield" "Edged Buckler"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+
+Show #Gloves Base
+	BaseType "Moulded Mitts" "Spined Bracers" "Intricate Gloves" "Doubled Gauntlets" "Goldcast Cuffs" "Spiral Wraps" "Golden Bracers"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+	
+Show #Boots Base
+	BaseType "Moulded Mitts" "Stone Greaves" "Lizardscale Boots" "Feathered Sandals" "Stacked Sabatons" "Pelt Leggings" "Hunting Shoes" "Golden Caligae"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+	
+Show #Body Armour Base
+	BaseType "Golden Mantle" "Iron Cuirass" "Steel Plate" "Vaal Cuirass" "Pathfinder Coat" "Studded Vest" "Hexer's Robe" "Keth Raiment" "Altar Robe" "Rogue Armour" "Scale Mail" "Cloaked Mail" "Shaman Mantle" "Sacrificial Mantle" "Scalper's Jacket" "Wayfarer Jacket"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+	
+Show #Helmets Base
+	BaseType "Golden Wreath" "Golden Visage" "Elite Greathelm" "Hunter Hood" "Feathered Tiara" "Shielded Helm" "Heavy Crown" "Tribal Mask"
+	Rarity Normal Magic Rare
+	SetFontSize 30
+
+Show #Chance
+	BaseType "Ornate Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Feathered Tiara" "Shielded Helm" "Heavy Crown" "Tribal Mask" "Amethyst Ring" "Gold Ring" "Sapphire Ring" "Emerald Ring" "Stellar Amulet" "Azure Amulet"
+	Rarity Normal
+	SetFontSize 30
+
 Show
-	BaseType "Dualstring Bow"
-	Rarity Normal Magic Rare
-	SetFontSize 36
-	SetTextColor 255 255 0 255
-	SetBorderColor 255 255 0 255
+	BaseType "Breach Ring"
+	SetFontSize 34
+	SetTextColor 221 160 221 255
+	SetBorderColor 221 160 221 255
 	SetBackgroundColor 20 20 20 255
-	PlayEffect Yellow
-	MinimapIcon 0 Yellow Star
+	PlayEffect Pink
+	MinimapIcon 0 Pink Star
 DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
 
-Show #Item Base Ilvl 82+
-	BaseType "Dualstring Bow" "Long Quarterstaff" "Bombard Crossbow" "Leaden Greathammer" "Chiming Staff" "Gelid Staff" "Galvanic Wand" "Attuned Wand" "Siphoning Wand"
-	Rarity Normal Magic Rare
-	ItemLevel >= 82
-	SetFontSize 36
-	SetTextColor 255 255 0 255
-	SetBorderColor 255 255 0 255
-	SetBackgroundColor 20 20 20 255
-	PlayEffect Cyan
-	MinimapIcon 0 Cyan Moon
+Show
+	BaseType "Charm"
+	SetFontSize 34
+	SetTextColor 48 213 200 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
 DisableDropSound True
-CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
 
+Hide #Hide all crap
+	Class == "One Hand Maces" "Two Hand Maces" "Sceptres" "Bows" "Quarterstaves" "Crossbows" "Quivers" "Shields" "Foci" "Gloves" "Body Armours" "Boots" "Helmets"
+	Rarity < "Rare"
 #====================================================================================================================================================
 # DISTILLED
 #====================================================================================================================================================
@@ -306,7 +357,7 @@ DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\5.mp3" 300
 
 #====================================================================================================================================================
-# MISC
+# LEAGUE MECHANICS
 #====================================================================================================================================================
 Show
 	BaseType "Relic"
@@ -316,6 +367,50 @@ Show
 	SetBackgroundColor 0 0 0 255
 	PlayEffect Green
 	MinimapIcon 0 Green Raindrop
+
+Show
+	BaseType "Catalyst"
+	SetFontSize 34
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect Green
+	MinimapIcon 0 Green Raindrop
+Show
+	BaseType "Logbook"
+	SetTextColor 255 85 85 255
+	SetBorderColor 255 85 85 255
+	SetBackgroundColor 40 0 30 255
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow UpsideDownHouse	
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
+
+Show
+	Class "Currency"
+	BaseType "Simulacrum Splinter" "Breach Splinter" "Artifact" "Exotic"
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect Green
+	MinimapIcon 0 Green Raindrop
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
+	
+Show
+	BaseType "Essence of "
+	SetFontSize 36
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 254 255 128 255
+	PlayEffect White
+	MinimapIcon 2 White Circle
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\2Essence.mp3" 300
+
+#====================================================================================================================================================
+# MISC
+#====================================================================================================================================================
 
 Show
 	BaseType "Rune"
