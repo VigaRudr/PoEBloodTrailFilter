@@ -9,6 +9,7 @@
 #	| Viga Rudr | 08.12.2024 | First Redaction                          |
 #	| Viga Rudr | 14.12.2024 | Base Types + Jewellers + File Formatting |
 #   } Viga Rudr | 20.12.2024 | Removed some base types, tiers improv	|
+#   } Viga Rudr | 21.12.2024 | Some coloring fix						|
 #
 #
 #====================================================================================================================================================
@@ -350,7 +351,7 @@ Show #OILS TIER 3
 	SetFontSize 34
 	SetTextColor 0 200 0 255
 	SetBorderColor 0 200 0 255
-	SetBackgroundColor 0 0 0 255
+	SetBackgroundColor 240 90 35 255
 	PlayEffect Yellow
 	MinimapIcon 0 Yellow Raindrop
 DisableDropSound True
@@ -361,7 +362,7 @@ Show #OILS TIER 4
 	SetFontSize 34
 	SetTextColor 0 200 0 255
 	SetBorderColor 0 200 0 255
-	SetBackgroundColor 0 0 0 255
+	SetBackgroundColor 255 253 208 255
 	PlayEffect Yellow
 	MinimapIcon 0 Yellow Raindrop
 DisableDropSound True
@@ -372,7 +373,7 @@ Show #OILS TIER 5
 	SetFontSize 34
 	SetTextColor 0 200 0 255
 	SetBorderColor 0 200 0 255
-	SetBackgroundColor 0 0 0 255
+	SetBackgroundColor 255 255 255 255
 	PlayEffect Yellow
 	MinimapIcon 0 Yellow Raindrop
 DisableDropSound True
