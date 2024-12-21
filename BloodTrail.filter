@@ -8,7 +8,9 @@
 #	| Author    | Date time  | Description 		                        |
 #	| Viga Rudr | 08.12.2024 | First Redaction                          |
 #	| Viga Rudr | 14.12.2024 | Base Types + Jewellers + File Formatting |
-#   
+#   } Viga Rudr | 20.12.2024 | Removed some base types, tiers improv	|
+#
+#
 #====================================================================================================================================================
 
 
@@ -17,18 +19,18 @@
 #====================================================================================================================================================
 Show
 	Class Currency 	
-	BaseType "Orb of Transmutation" "Orb of Augmentation" "Regal Shard" "Armourer's Scrap" "Blacksmith's Whetstone"
+	BaseType "Orb of Transmutation" "Orb of Augmentation" "Regal Shard" 
 	SetFontSize 30
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 210 178 135 255
-	MinimapIcon 0 White Circle
+	#MinimapIcon 0 White Circle
 DisableDropSound True
 #CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
 
 Show
 	Class Currency 
-	BaseType "Orb of Transmutation" "Orb of Augmentation" "Regal Shard" "Artificer's Shard"
+	BaseType "Regal Shard" "Artificer's Shard" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher"
 	SetFontSize 30
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -36,7 +38,7 @@ Show
 	MinimapIcon 0 White Circle
 DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
-	
+
 Show
 	Class Currency
 	BaseType "Chaos Orb" "Regal Orb" "Artificer's Orb"
@@ -51,7 +53,7 @@ CustomAlertSound "BloodTrailFilterSound\1Ah.mp3" 300
 
 Show
 	Class Currency
-	BaseType "Orb of Annulment" "Orb of Alchemy" "Vaal Orb" "Lesser Jeweller's Orb" "Gemcutter's Prism" "Glassblower's Bauble"
+	BaseType "Orb of Annulment" "Orb of Alchemy" "Vaal Orb" "Lesser Jeweller's Orb"
 	SetFontSize 40
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -75,30 +77,6 @@ CustomAlertSound "BloodTrailFilterSound\3Oh amazing.mp3" 300
 
 Show
 	Class Currency
-	BaseType "Greater Jeweller's Orb"
-	SetFontSize 40
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 240 90 35 255
-	PlayEffect Red
-	MinimapIcon 0 Red Star
-DisableDropSound True
-CustomAlertSound "BloodTrailFilterSound\3Ahh_fascinating.mp3" 300
-
-Show
-	Class Currency
-	BaseType "Perfect Jeweller's Orb"
-	SetFontSize 40
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 240 90 35 255
-	PlayEffect Red
-	MinimapIcon 0 Red Star
-DisableDropSound True
-CustomAlertSound "BloodTrailFilterSound\5Ahh_worth_await.mp3" 300
-
-Show
-	Class Currency
 	BaseType "Exalted Orb"
 	SetFontSize 40
 	SetTextColor 255 255 255 255
@@ -111,11 +89,11 @@ CustomAlertSound "BloodTrailFilterSound\3Exalted.mp3" 300
 
 Show
 	Class Currency
-	BaseType "Divine Orb" "Orb of Annulment" 
+	BaseType "Divine Orb"
 	SetFontSize 40
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 240 90 35 255
+	SetTextColor 179 0 0 255
+	SetBorderColor 179 0 0 255
+	SetBackgroundColor 245 255 245 255
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 DisableDropSound True
@@ -123,11 +101,35 @@ CustomAlertSound "BloodTrailFilterSound\4Divine.mp3" 300
 
 Show
 	Class Currency
+	BaseType "Orb of Annulment" "Greater Jeweller's Orb"
+	SetFontSize 40
+	SetTextColor 179 0 0 255
+	SetBorderColor 179 0 0 255
+	SetBackgroundColor 245 255 245 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\4.mp3" 300
+
+Show
+	Class Currency
+	BaseType "Perfect Jeweller's Orb"
+	SetFontSize 40
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\5Ahh_worth_await.mp3" 300
+
+Show
+	Class Currency
 	BaseType "Mirror of Kalandra"
 	SetFontSize 40
-	SetTextColor 255 255 255 255
+	SetTextColor 255 0 0 255
 	SetBorderColor 255 255 255 255
-	SetBackgroundColor 240 90 35 255
+	SetBackgroundColor 255 255 255 255
 	PlayEffect Red
 	MinimapIcon 0 Red Cross
 DisableDropSound True
@@ -185,6 +187,18 @@ DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\map high t.mp3"
 
 Show
+	BaseType "Waystone"
+	WaystoneTier >= 14
+	SetFontSize 36
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 255 253 208 255
+	PlayEffect White
+	MinimapIcon 0 Purple Moon
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\map high t.mp3"
+
+Show
 	BaseType "Precursor "
 	SetFontSize 34
 	SetTextColor 0 200 0 255
@@ -208,34 +222,34 @@ DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
 
 Show #Bows Base
-	BaseType "Dualstring Bow" #"Zealot Bow"
+	BaseType "Expert Dualstring Bow" #"Zealot Bow"
 	Rarity Normal Magic Rare
 	SetFontSize 30
 
 Show #Quarterstaff Base
-	BaseType "Long Quarterstaff" "Slicing Quarterstaff" 
+	BaseType "Expert Long Quarterstaff" "Expert Slicing Quarterstaff" 
 	Rarity Normal Magic Rare
 	SetFontSize 30
 
 Show #Crossbow Base
-	BaseType "Bombard Crossbow" "Dyad Crossbow" "Forlorn Crossbow"
+	BaseType "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Expert Forlorn Crossbow"
 	Rarity Normal Magic Rare
 	SetFontSize 30
 	
 Show #Two-Hand Maces Base
-	BaseType "Leaden Greathammer" "Oak Greathammer" "Temple Maul" "Crumbling Maul"
+	BaseType "Expert Leaden Greathammer" "Expert Oak Greathammer" "Expert Temple Maul" "Expert Crumbling Maul"
 	Rarity Normal Magic Rare
 	SetFontSize 30
 
-Show #Staves Base
-	BaseType "Chiming Staff" "Gelid Staff" "Roaring Staff" "Paralysing Staff" "Cleric Staff" "Dark Staff" "Reaping Staff" "Rending Staff" "Voltaic Staff"
-	Rarity Normal Magic Rare
-	SetFontSize 30
+#Show #Staves Base
+#	BaseType "Chiming Staff" "Gelid Staff" "Roaring Staff" "Paralysing Staff" "Cleric Staff" "Dark Staff" "Reaping Staff" "Rending Staff" "Voltaic Staff"
+#	Rarity Normal Magic Rare
+#	SetFontSize 30
 
-Show #Wand Base
-	BaseType "Galvanic Wand" "Attuned Wand" "Siphoning Wand"
-	Rarity Normal Magic Rare
-	SetFontSize 30
+#Show #Wand Base
+#	BaseType "Galvanic Wand" "Attuned Wand" "Siphoning Wand"
+#	Rarity Normal Magic Rare
+#	SetFontSize 30
 
 Show #Sceptres Base
 	BaseType "Hallowed Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Rattling Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Devouring Sceptre" "Clasped Sceptre" "Wrath Sceptre" "Devotional Sceptre" "Omen Sceptre" "Stoic Sceptre"
@@ -253,29 +267,32 @@ Show #Shields Base
 	SetFontSize 30
 
 Show #Gloves Base
-	BaseType "Moulded Mitts" "Spined Bracers" "Intricate Gloves" "Doubled Gauntlets" "Goldcast Cuffs" "Spiral Wraps" "Golden Bracers"
+	BaseType "Expert Moulded Mitts" "Expert Spined Bracers" "Expert Intricate Gloves" "Expert Doubled Gauntlets" "Expert Goldcast Cuffs" "Expert Spiral Wraps" "Golden Bracers"
 	Rarity Normal Magic Rare
 	SetFontSize 30
 	
 Show #Boots Base
-	BaseType "Moulded Mitts" "Stone Greaves" "Lizardscale Boots" "Feathered Sandals" "Stacked Sabatons" "Pelt Leggings" "Hunting Shoes" "Golden Caligae"
+	BaseType "Expert Moulded Mitts" "Expert Stone Greaves" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Stacked Sabatons" "Expert Pelt Leggings" "Expert Hunting Shoes" "Golden Caligae"
 	Rarity Normal Magic Rare
 	SetFontSize 30
 	
 Show #Body Armour Base
-	BaseType "Golden Mantle" "Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Pathfinder Coat" "Studded Vest" "Hexer's Robe" "Expert Keth Raiment" "Expert Altar Robe" "Expert Rogue Armour" "Scale Mail" "Cloaked Mail" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Scalper's Jacket" "Expert Wayfarer Jacket"
+	BaseType "Golden Mantle" "Expert Iron Cuirass" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Pathfinder Coat" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Keth Raiment" "Expert Altar Robe" "Expert Rogue Armour" "Expert Scale Mail" "Expert Cloaked Mail" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Scalper's Jacket" "Expert Wayfarer Jacket"
 	Rarity Normal Magic Rare
 	SetFontSize 30
 	
 Show #Helmets Base
-	BaseType "Golden Wreath" "Golden Visage" "Elite Greathelm" "Hunter Hood" "Feathered Tiara" "Shielded Helm" "Heavy Crown" "Tribal Mask"
+	BaseType "Golden Wreath" "Golden Visage" "Expert Elite Greathelm" "Expert Hunter Hood" "Expert Feathered Tiara" "Expert Shielded Helm" "Expert Heavy Crown" "Expert Tribal Mask"
 	Rarity Normal Magic Rare
 	SetFontSize 30
 
 Show #Chance
-	BaseType "Ornate Belt" "Heavy Belt" "Utility Belt" "Fine Belt" "Feathered Tiara" "Shielded Helm" "Heavy Crown" "Tribal Mask" "Amethyst Ring" "Gold Ring" "Sapphire Ring" "Emerald Ring" "Stellar Amulet" "Azure Amulet"
+	BaseType "Sapphire Ring" "Heavy Belt" "Stellar Amulet" "Ornate Belt" "Smuggler Coat"
 	Rarity Normal
 	SetFontSize 30
+	SetTextColor 179 134 0 255
+	SetBorderColor 179 134 0 255
+	SetBackgroundColor 255 253 208 255
 
 Show
 	BaseType "Breach Ring"
@@ -296,13 +313,13 @@ Show
 	SetBackgroundColor 0 0 0 255
 DisableDropSound True
 
-Show #Hide all crap
-	Class == "One Hand Maces" "Two Hand Maces" "Sceptres" "Bows" "Quarterstaves" "Crossbows" "Quivers" "Shields" "Foci" "Gloves" "Body Armours" "Boots" "Helmets"
+Show #Show Quality
+	Class == "One Hand Maces" "Two Hand Maces" "Sceptres" "Bows" "Quarterstaves" "Crossbows" "Quivers" "Shields" "Foci" "Gloves" "Body Armours" "Boots" "Helmets" "Staves" "Wands"
 	Quality > 0
 	SetBorderColor 0 0 60 255
 
 Hide #Hide all crap
-	Class == "One Hand Maces" "Two Hand Maces" "Sceptres" "Bows" "Quarterstaves" "Crossbows" "Quivers" "Shields" "Foci" "Gloves" "Body Armours" "Boots" "Helmets"
+	Class == "One Hand Maces" "Two Hand Maces" "Sceptres" "Bows" "Quarterstaves" "Crossbows" "Quivers" "Shields" "Foci" "Gloves" "Body Armours" "Boots" "Helmets" "Staves" "Wands"
 	Rarity < "Rare"
 #====================================================================================================================================================
 # DISTILLED
@@ -381,6 +398,14 @@ Show
 	SetBackgroundColor 0 0 0 255
 	PlayEffect Green
 	MinimapIcon 0 Green Raindrop
+	
+Show
+	BaseType "Key"
+	SetFontSize 34
+	SetTextColor 0 200 0 255
+	SetBorderColor 0 200 0 255
+	SetBackgroundColor 0 0 0 255
+	
 Show
 	BaseType "Logbook"
 	SetTextColor 255 85 85 255
@@ -416,7 +441,14 @@ CustomAlertSound "BloodTrailFilterSound\2Essence.mp3" 300
 #====================================================================================================================================================
 # MISC
 #====================================================================================================================================================
-
+Show
+	BaseType "Iron Rune"
+	SetFontSize 35
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 255 253 208 255
+	MinimapIcon 2 Green Circle
+	
 Show
 	BaseType "Rune"
 	SetFontSize 30
