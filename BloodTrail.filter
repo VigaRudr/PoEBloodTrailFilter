@@ -8,8 +8,9 @@
 #	| Author    | Date time  | Description 		                        |
 #	| Viga Rudr | 08.12.2024 | First Redaction                          |
 #	| Viga Rudr | 14.12.2024 | Base Types + Jewellers + File Formatting |
-#   } Viga Rudr | 20.12.2024 | Removed some base types, tiers improv	|
-#   } Viga Rudr | 21.12.2024 | Some coloring fix						|
+#   | Viga Rudr | 20.12.2024 | Removed some base types, tiers improv	|
+#   | Viga Rudr | 21.12.2024 | Some coloring fix & Added Map Fragments	|
+#   | Viga Rudr | 23.12.2024 | Added high price Unique bases light up	|
 #
 #
 #====================================================================================================================================================
@@ -161,19 +162,19 @@ DisableDropSound True
 CustomAlertSound "BloodTrailFilterSound\2Uu_brutal.mp3" 300
 
 #====================================================================================================================================================
-# WAYSTONES & TABLETS
+# WAYSTONES & TABLETS & FRAGMENTS
 #====================================================================================================================================================
-Show
+Hide
 	BaseType "Waystone"
 	WaystoneTier < 10
 	SetFontSize 36
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 175 120 230 240
-	PlayEffect White
-	MinimapIcon 0 Purple Moon
-DisableDropSound True
-CustomAlertSound "BloodTrailFilterSound\map low t.mp3"
+	#PlayEffect White
+	#MinimapIcon 0 Purple Moon
+#DisableDropSound True
+#CustomAlertSound "BloodTrailFilterSound\map low t.mp3"
 
 Show
 	BaseType "Waystone"
@@ -185,7 +186,7 @@ Show
 	PlayEffect White
 	MinimapIcon 0 Purple Moon
 DisableDropSound True
-CustomAlertSound "BloodTrailFilterSound\map high t.mp3"
+CustomAlertSound "BloodTrailFilterSound\map high t.mp3" 300
 
 Show
 	BaseType "Waystone"
@@ -197,7 +198,7 @@ Show
 	PlayEffect White
 	MinimapIcon 0 Purple Moon
 DisableDropSound True
-CustomAlertSound "BloodTrailFilterSound\map high t.mp3"
+CustomAlertSound "BloodTrailFilterSound\map high t.mp3" 300
 
 Show
 	BaseType "Precursor "
@@ -207,6 +208,18 @@ Show
 	SetBackgroundColor 0 0 0 255
 	PlayEffect Green
 	MinimapIcon 0 Green Raindrop
+	
+Show
+	Class == "Pinnacle Keys" "Map Fragments"
+	SetFontSize 40
+	SetTextColor 255 125 77 255
+	SetBorderColor 255 125 77 255
+	SetBackgroundColor 255 240 234 255
+	PlayEffect Orange
+	MinimapIcon 0 Orange Moon
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\2.mp3" 300
+
 #====================================================================================================================================================
 # GEAR
 #====================================================================================================================================================
@@ -295,6 +308,18 @@ Show #Chance
 	SetBorderColor 179 134 0 255
 	SetBackgroundColor 255 253 208 255
 
+Show #Unique Bases
+	BaseType "Sapphire Ring" "Heavy Belt" "Stellar Amulet" "Ornate Belt" "Smuggler Coat"
+	Rarity Normal
+	SetFontSize 40
+	SetTextColor 144 89 35 255
+	SetBorderColor 144 89 35 255
+	SetBackgroundColor 251 245 208 239
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+DisableDropSound True
+CustomAlertSound "BloodTrailFilterSound\3.mp3" 300
+
 Show
 	BaseType "Breach Ring"
 	SetFontSize 34
@@ -349,9 +374,9 @@ CustomAlertSound "BloodTrailFilterSound\1.mp3" 300
 Show #OILS TIER 3
 	BaseType "Distilled Disgust" "Distilled Despair"
 	SetFontSize 34
-	SetTextColor 0 200 0 255
-	SetBorderColor 0 200 0 255
-	SetBackgroundColor 240 90 35 255
+	SetTextColor 7 27 7 255
+	SetBorderColor 7 27 7 255
+	SetBackgroundColor 172 234 172 255
 	PlayEffect Yellow
 	MinimapIcon 0 Yellow Raindrop
 DisableDropSound True
@@ -409,9 +434,10 @@ Show
 	
 Show
 	BaseType "Logbook"
+	SetFontSize 40
 	SetTextColor 255 85 85 255
 	SetBorderColor 255 85 85 255
-	SetBackgroundColor 40 0 30 255
+	SetBackgroundColor 255 225 214 255
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow UpsideDownHouse	
 DisableDropSound True
